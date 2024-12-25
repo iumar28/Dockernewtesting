@@ -24,7 +24,6 @@ jobs:
       # Step 3: Build Maven project
       - name: Build Maven Project
         run: |
-          chmod +x mvnw
           ./mvnw package -Pprod -DskipTests
 
       # Step 4: Set up Docker
